@@ -1,0 +1,20 @@
+---
+import Container from './Container.astro';
+import { SITE } from '../const';
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 py-4 bg-stone-100/75 backdrop-blur-sm saturate-200">
+  <Container>
+    <div class="flex items-center justify-between flex-wrap gap-3">
+      <div class="flex flex-col">
+        <a href="/" class="font-bold leading-6">{SITE.NAME}</a>
+        <span class="text-xs font-medium text-stone-400">{SITE.JOB}</span>
+      </div>
+      <nav class="flex gap-1.5">
+        <a href="/" class="underline underline-offset-2">home</a>
+        <span class="text-stone-800/60">/</span>
+        <a href="/cv" class="underline underline-offset-2">cv</a>
+      </nav>
+    </div>
+  </Container>
+</header>

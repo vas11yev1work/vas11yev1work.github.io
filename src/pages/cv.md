@@ -1,0 +1,82 @@
+---
+layout: ../layouts/ArticleLayout.astro
+title: CV
+description: Senior Frontend Developer with over 5 years of experience in scalable web applications
+---
+
+# Anatolii Vasilev
+## Senior Frontend Developer
+
+Rijeka, Croatia <br> [Telegram](https://t.me/vas11yev1work) | [GitHub](https://github.com/vas11yev1work) | [LinkedIn](https://www.linkedin.com/in/anatolii-vasilev-a65b03215/) | [anatolii.vslvv@gmail.com](mailto:anatolii.vslvv@gmail.com)
+
+---
+## Summary
+Senior Frontend Developer with **over 5 years of experience** in scalable web applications. Proven track record of delivering high-impact solutions for platforms with 3K+ active users. Skilled in Vue.js, TypeScript, testing, and CI/CD pipelines. Expertise in front-end architecture, adaptive layouts, and cross-team collaboration.
+
+---
+## Skills
+**Programming Languages:** JavaScript, TypeScript <br>
+**Frameworks:** Vue 2/3, Tailwind <br>
+**Tools:** Vue 2/3 and the ecosystem (Options API, Composition API), TypeScript, experience with React, testing with Jest/Vitest, Frontend application architecture, adaptive and semantic layout <br>
+**Expertise in:** code reviews, experience in Node.js, NestJS, REST API, Git, CI/CD, Docker <br>
+**Languages:** English (Intermediate), Russian (Native)
+
+---
+## Professional Experience
+
+### Senior Frontend Developer
+
+**Voximplant** — cloud platform for communication with 30K+ active users and 1B+ calls per year <br>
+Feb 2024 – Present <br>
+Remote (Astana, Kazakhstan)
+
+- **Core project:** Maintained and enhanced one of the key company products (omnichannel cloud contact center) with an average revenue of $4mln a year: a web application across more than 5 countries with over 3.800+ end active users.
+- **New features:** Developing a new version of the main product key section: implemented a series of new features enhancing UX and layout, and ensuring backend integrations; Project launch is scheduled for Sep'25.
+- **Migration:** Contributed to the migration of the main application from Vue 2 to Vue 3 by rewriting legacy components using the Composition API and fixing compatibility issues — resulting in improved maintainability, performance, and long-term framework support.
+- **State management, Localization:** Optimized state management and localization by implementing Vuex for scalable state handling and i18n for seamless multi-language support.
+- **Component approach:** Ensured scalability and consistency across projects via a component-based approach, creating a custom design system.
+- **Internal optimization:** Optimized developing process enhancing code clarity by developing a set of eslint rules.
+- **Collaboration:** Collaborated with a cross-functional team of 42 people (12 frontend, 12 backend, 10 QA, 2 PM, 4 designers, 2 BA) distributed across time zones.
+
+*Stack: Vue 2/3, Vuex, TypeScript, Jest*
+
+### Middle Frontend Developer
+
+**ViTech** — online retailer with $1.3B annual revenue and more than 1.000 pick-up points in Russia <br>
+Mar 2023 – Feb 2024 <br>
+Remote (Dubai, UAE)
+
+- **Core project:** Developed an internal platform for 1500+ users with up to 90,000 requests per day including business logic, coding, and tech documentation, which reduced personnel costs by 42% and order processing time for the Procurement department.
+- **New feature:** Built a NestJS microservice (Puppeteer-based) for HTML-to-PDF conversion, replacing a deprecated system and providing flexible support for various B2B document formats.
+
+*Stack: Vue 2/3, Pinia, TypeScript, Jest, NuxtJS, NestJS*
+
+### Middle Frontend Developer
+
+**Beeline** — top 3 telecom operators in Russia with more than 44 million users <br>
+Mar 2021 – Mar 2023 <br>
+St. Petersburg, Russia
+
+- **Migration for the core project:** Launched an internal web app with 2.000+ active users migrating from Vue 2 to Vue 3, was responsible for app architecture, business logic, and some new features.
+- **Business logic:** Developed and maintained over 100 business parts for a support system, enabling operators to efficiently handle customer requests and improve service quality.
+- **Optimizing development:** Defined and executed technical OKRs, including the introduction of E2E testing, with more than 95% unit test coverage.
+
+*Stack: Vue 2/3, Pinia, TypeScript, Jest*
+
+---
+## JS Community
+
+**HTML Academy** <br>
+Jan 2020 – Mar 2020 <br>
+- Mentored aspiring developers in HTML, CSS, and JavaScript basics, supporting their transition to hands-on frontend development.
+
+---
+## Personal Projects
+
+Developed a web application across all devices and screen sizes, acting as a sole full-stack developer
+- **UI/UX:** Developed and implemented a design system using Radix Vue.
+- **Backend:** Developed backend using NestJS, with PostgreSQL, Redis, and Prisma ORM for efficient data management. Integration with S3 and payment system for recurring payments.
+- Set up **GitLab CI/CD pipelines** to automate building, testing, and deployment processes.
+- Deployed applications on servers with **Docker and Traefik**, including automatic SSL certificate configuration.
+
+<sup>I hereby authorise the treatment of my personal data in accordance with GDPR EU 2016/679</sup>

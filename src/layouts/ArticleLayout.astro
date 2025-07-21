@@ -1,0 +1,21 @@
+---
+import Article from '../components/Article.astro';
+import Layout from './Layout.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  frontmatter?: {
+    title: string;
+    description: string;
+  };
+}
+
+const { title, description, frontmatter } = Astro.props;
+---
+
+<Layout title={title} description={description} frontmatter={frontmatter}>
+  <Article>
+    <slot />
+  </Article>
+</Layout>

@@ -1,0 +1,38 @@
+---
+import '../styles/global.css';
+import Head from '../components/Head.astro';
+import { SITE } from '../const';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  frontmatter?: {
+    title: string;
+    description: string;
+  };
+}
+
+const { title, description, frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head
+      title={`${title ?? frontmatter?.title} | ${SITE.NAME}`}
+      description={description ?? frontmatter?.description ?? ''}
+    />
+  </head>
+  <body class="flex flex-col">
+    <Header />
+    <main class="grow pt-24 pb-8">
+      <Container>
+        <slot />
+      </Container>
+    </main>
+    <Footer />
+  </body>
+</html>
