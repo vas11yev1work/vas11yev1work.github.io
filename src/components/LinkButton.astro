@@ -1,9 +1,11 @@
 ---
-interface Props {
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a'> {
   href: string;
 }
 
-const { href } = Astro.props;
+const { href, class: className, ...rest } = Astro.props;
 ---
 
 <a
@@ -12,7 +14,9 @@ const { href } = Astro.props;
     'inline-flex items-center text-stone-500 border border-stone-300 cursor-pointer rounded-md px-2.5 py-1.5 font-medium',
     'transition-all duration-300 ease-in-out',
     'hover:bg-stone-800/5 hover:text-stone-800 hover:border-stone-400',
+    className,
   ]}
+  {...rest}
 >
   <span class="font-sans text-sm">
     <slot />
