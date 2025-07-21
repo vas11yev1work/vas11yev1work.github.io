@@ -31,7 +31,7 @@ Feb 2024 – Present <br>
 Remote (Astana, Kazakhstan)
 
 - **Core project:** Maintained and enhanced one of the key company products (omnichannel cloud contact center) with an average revenue of $4mln a year: a web application across more than 5 countries with over 3.800+ end active users.
-- **New features:** Developing a new version of the main product key section: implemented a series of new features enhancing UX and layout, and ensuring backend integrations; Project launch is scheduled for Sep'25.
+- **New features:** Participated in the development of a new dialler module from scratch — a flexible solution for managing automated and operator-driven contact list calls. Implemented the user interface and integrated backend logic, including variable mapping between contact list columns and system parameters, enabling customizable call flows for end users.
 - **Migration:** Contributed to the migration of the main application from Vue 2 to Vue 3 by rewriting legacy components using the Composition API and fixing compatibility issues — resulting in improved maintainability, performance, and long-term framework support.
 - **State management, Localization:** Optimized state management and localization by implementing Vuex for scalable state handling and i18n for seamless multi-language support.
 - **Component approach:** Ensured scalability and consistency across projects via a component-based approach, creating a custom design system.
@@ -47,7 +47,7 @@ Mar 2023 – Feb 2024 <br>
 Remote (Dubai, UAE)
 
 - **Core project:** Developed an internal platform for 1500+ users with up to 90,000 requests per day including business logic, coding, and tech documentation, which reduced personnel costs by 42% and order processing time for the Procurement department.
-- **New feature:** Built a NestJS microservice (Puppeteer-based) for HTML-to-PDF conversion, replacing a deprecated system and providing flexible support for various B2B document formats.
+- **New features:** Built a NestJS microservice (Puppeteer-based) for HTML-to-PDF conversion, replacing a deprecated system and providing flexible support for various B2B document formats.
 
 *Stack: Vue 2/3, Pinia, TypeScript, Jest, NuxtJS, NestJS*
 
