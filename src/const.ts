@@ -6,7 +6,7 @@ export const SITE = {
 
 export const HOME = {
   TITLE: 'Home',
-  DESCRIPTION: 'Frontend engineer with over 5 years of experience in scalable web applications',
+  DESCRIPTION: 'Frontend engineer with over 6 years of experience in scalable web applications',
 };
 
 export const SOCIALS = [
