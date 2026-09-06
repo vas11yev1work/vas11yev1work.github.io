@@ -23,3 +23,12 @@ export const SOCIALS = [
     URL: 'https://github.com/vas11yev1work',
   },
 ];
+
+export const PROJECTS = [
+  {
+    NAME: 'Lotty',
+    DESCRIPTION:
+      'A full-stack language-learning platform — personal vocabulary training, AI-generated content, and the infrastructure behind it.',
+    URL: '/projects/lotty',
+  },
+];

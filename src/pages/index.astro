@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { HOME, SOCIALS, SITE } from '../const';
+import { HOME, SOCIALS, SITE, PROJECTS } from '../const';
 import LinkButton from '../components/LinkButton.astro';
 ---
 
@@ -43,6 +43,30 @@ import LinkButton from '../components/LinkButton.astro';
         <b>Other:</b> Node.js, Nest.js, Bun, Hono, REST API, GraphQL, SSR, Git, CI/CD, Docker <br />
         <b>Languages: </b> English (Intermediate), Russian (Native), Italian (Beginner)
       </p>
+    </div>
+    <div class="font-serif space-y-4">
+      <h4 class="font-sans font-semibold">Projects</h4>
+      <div class="space-y-1">
+        {
+          PROJECTS.map(project => (
+            <a
+              href={project.URL}
+              class:list={[
+                'group block px-3 py-2.5 rounded-md text-stone-800 hover:text-stone-800',
+                'transition-colors duration-300 ease-in-out bg-stone-800/5 hover:bg-stone-800/10',
+              ]}
+            >
+              <span class="font-sans font-medium inline-flex items-center gap-1.5">
+                {project.NAME}
+                <span class="text-stone-400 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5">
+                  →
+                </span>
+              </span>
+              <span class="block text-sm text-stone-500 mt-0.5">{project.DESCRIPTION}</span>
+            </a>
+          ))
+        }
+      </div>
     </div>
   </section>
 </Layout>
