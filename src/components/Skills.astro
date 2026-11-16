@@ -1,0 +1,14 @@
+---
+import { SKILLS } from '../const';
+---
+
+<p>
+  {
+    SKILLS.map(skill => (
+      <>
+        <b>{skill.LABEL}:</b> {skill.ITEMS}
+        <br />
+      </>
+    ))
+  }
+</p>

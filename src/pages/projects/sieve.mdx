@@ -1,0 +1,42 @@
+---
+layout: ../../layouts/ArticleLayout.astro
+title: Sieve
+description: An open-source multi-agent code review tool for GitHub pull requests, built as a Claude Code plugin.
+---
+
+# Sieve — Multi-Agent Code Review
+
+**Source:** [github.com/vas11yev1work/sieve](https://github.com/vas11yev1work/sieve)
+
+An open-source tool that reviews a GitHub pull request (or local changes) with several AI agents, then lets a human decide what is worth saying — designed, built, and maintained solo.
+
+### What it is
+
+Several reviewer agents check a PR in parallel against the project's own rules. Every finding is re-checked by an independent validator, and only the survivors reach a local web UI. There, each finding can be discussed with Claude, accepted or rejected, turned into a short comment, and published to GitHub as one review. Nothing is posted until the reviewer presses Publish.
+
+### Why I built it
+
+Code review is a big part of my daily work, and plain AI review tools produce too much noise. Sieve keeps a human in the loop and filters findings before they reach the PR, so reviews are faster and more thorough without spamming authors with false positives.
+
+### My role
+
+Owned the product end to end: the review pipeline and agent prompts, the local server and web UI, GitHub integration, and distribution as a Claude Code plugin.
+
+### Skills demonstrated
+
+- **Product thinking:** a workflow built around real review pain: noise, repeated comments, and lost context
+- **AI engineering:** orchestrating parallel agents with independent validation, so only confirmed findings are shown
+- **Frontend development:** Vue 3 interface for discussing findings, plus a "Map" view that shows how the changed code works
+- **Tooling and integrations:** CLI, GitHub CLI and API, Git worktrees, Claude Code plugin packaging
+- **Developer experience:** keyboard-driven UI, per-project review rules, review language settings
+
+### Tech stack
+
+TypeScript · Bun · Vue 3 · Claude Code (plugins, subagents) · GitHub API · Git
+
+### Highlights
+
+- Published as an open-source Claude Code plugin that anyone can install from GitHub
+- Skips what is already discussed on the PR, so authors don't get duplicate comments
+- Rejected findings can be remembered, so future reviews don't repeat them
+- Used in my own daily review work at VirtoCommerce

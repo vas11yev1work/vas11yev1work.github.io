@@ -1,38 +1,44 @@
 ---
 layout: ../layouts/ArticleLayout.astro
 title: CV
-description: Senior Frontend Developer with over 7 years of experience in scalable web applications
+description: Senior Software Engineer with over 7 years of experience in scalable web applications
 ---
 import DownloadCV from '../components/DownloadCV.astro';
+import Skills from '../components/Skills.astro';
 
 # Anatolii Vasilev
-## Senior Frontend Developer
+## Senior Software Engineer
 
 Belgrade, Serbia <br /> [Telegram](https://t.me/vas11yev1work) | [GitHub](https://github.com/vas11yev1work) | [LinkedIn](https://www.linkedin.com/in/anatolii-vasilev-a65b03215/) | [anatolii.vslvv@gmail.com](mailto:anatolii.vslvv@gmail.com)
 
 ---
 ## Summary
-- 7+ years of experience as a Frontend Developer, specializing in Vue.js and TypeScript.
+- 7+ years of experience as a Software Engineer, specializing in Vue.js and TypeScript, comfortable working across the stack (Node.js, PostgreSQL, basic C# and Python).
 - Architected and delivered a procurement platform that cut personnel costs by 42% for an online retailer with $1.3B in revenue
 - Led migration of a core internal app from Vue 2 to Vue 3 for a telecom with 44M+ users, improving performance and maintainability.
 - Built and scaled frontend applications for platforms serving 30K+ active users and processing over 1B calls annually.
-- Experienced in building and maintaining applications for platforms with 30K+ active users and high-volume transactions.
+- Building B2B e-commerce features for the open-source VirtoCommerce platform (loyalty program, enterprise address management, team review automation), using AI tools daily and creator of the open-source Sieve code review tool.
 ---
 ## Skills
-**Frontend:** JavaScript (ES6+), TypeScript, Vue.js (Vue 2 & Vue 3, Composition API), Nuxt.js, React, Next.js, Tailwind, Jest, Vitest <br />
-**Expertise in:** сode reviews, frontend application architecture, adaptive and semantic layout <br />
-**Other:** Node.js, Nest.js, Bun, Hono, REST API, GraphQL, SSR, Git, CI/CD, Docker <br />
-**Languages:** English (Intermediate), Russian (Native), Italian (Beginner)
+<Skills />
 
 ---
 ## Professional Experience
 
-### Senior Frontend Developer
+### Senior Software Engineer
 
-**VirtoCommerce** — B2B digital commerce platform designed for complex marketplace, portal, and multichannel business needs <br />
+**VirtoCommerce** — open-source B2B digital commerce platform powering businesses in 60+ countries, with clients such as HEINEKEN, Bosch, and Lavazza <br />
 Oct 2025 - Present <br />
 Remote (Belgrade, Serbia)
 
+- **Customer loyalty:** Built the customer-facing side of a loyalty program for B2B buyers: they can earn points, complete missions and challenges, and spend points on rewards, which gives merchants a new tool for retention and repeat orders.
+- **Enterprise customers:** Made address selection fast and convenient for large companies with many saved addresses, with search and filters by country, region and city.
+- **Everyday shopping features:** Delivered product comparison, coupons and vouchers, a new menu and a products carousel.
+- **Team process:** Built an automated code review tracker in Microsoft Teams that shows every pull request's review status at a glance and notifies the right people at the right time. It improved collaboration and sped up reviews, and was adopted across 2 frontend repositories. Built as a reusable company-wide solution, so any team can plug it into their own repositories.
+- **Quality:** Wrote end-to-end autotests in Python for key storefront flows.
+- **AI in daily work:** Use AI tools daily for feature work, code review and testing, and contributed shared AI rules and a PR checklist to the repository. Reviews pull requests faster and more thoroughly with my own open-source tool, [Sieve](https://github.com/vas11yev1work/sieve).
+
+*Stack: Vue 3, TypeScript, Vite, Storybook, GraphQL, Vitest, C# (basics), Python (basics)*
 
 ### Senior Frontend Developer
 
@@ -82,11 +88,23 @@ Jan 2020 – Mar 2020 <br />
 ---
 ## Personal Projects
 
-Developed a web application across all devices and screen sizes, acting as a sole full-stack developer
-- **UI/UX:** Developed and implemented a design system using Radix Vue.
-- **Backend:** Developed backend using Nest.js, with PostgreSQL, Redis, and Prisma ORM for efficient data management. Integration with S3 and payment system for recurring payments.
-- Set up **GitLab CI/CD pipelines** to automate building, testing, and deployment processes.
-- Deployed applications on servers with **Docker and Traefik**, including automatic SSL certificate configuration.
+### [Sieve — multi-agents code review tool](https://github.com/vas11yev1work/sieve)
+
+Open-source multi-agent code review tool for GitHub PRs.
+
+- Multiple AI agents review PRs or local changes, and findings open in an interactive UI.
+- Each finding can be discussed, turned into a short comment, and published straight to the PR.
+- Works as a Claude Code plugin (`/sieve:review`, `/sieve:inbox` for the review queue).
+
+### [Lotty — learning languages](https://heylotty.app)
+
+Vocabulary trainer for language learners, built solo as a full-stack developer. Responsive across all devices and screen sizes.
+
+- **Frontend:** Vue 3 SPA (Composition API, Vite, Tailwind CSS v4, TanStack Query) with a shared UI kit, in a Turborepo monorepo.
+- **Backend:** Bun + Hono API with PostgreSQL, Drizzle ORM and Better Auth. OpenAPI spec is generated from Valibot schemas, so the web client is type-safe end-to-end.
+- **AI and learning:** Vercel AI SDK (OpenAI / Google) and Google Cloud Text-to-Speech, with spaced repetition via the FSRS algorithm for daily review queues.
+- **AI integration:** MCP server that lets Claude build dictionaries and word cards directly in the app.
+- **DevOps:** Docker-based deploy and GitHub CI, Sentry error tracking, automated releases with release-please.
 
 <sup>I consent to the processing of the personal data provided in this document for the purposes of recruitment by any company.</sup>
 <br />

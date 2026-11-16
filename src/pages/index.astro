@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { HOME, SOCIALS, SITE, PROJECTS } from '../const';
 import LinkButton from '../components/LinkButton.astro';
+import Skills from '../components/Skills.astro';
 ---
 
 <Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
@@ -9,7 +10,7 @@ import LinkButton from '../components/LinkButton.astro';
     <div class="font-serif space-y-4">
       <h4 class="font-sans font-semibold">Hey, I'm Anatolii 👋</h4>
       <p>
-        This is my playground as a frontend engineer. This site’s where I drop my thoughts, <br /> side projects, and whatever
+        This is my playground as a software engineer. This site’s where I drop my thoughts, <br /> side projects, and whatever
         else I’m building or learning.
       </p>
       <p>Feel free to look around — maybe you'll find something useful.</p>
@@ -35,14 +36,11 @@ import LinkButton from '../components/LinkButton.astro';
         <h4 class="font-sans font-semibold">About me</h4>
         <LinkButton href="/cv">Explore CV</LinkButton>
       </div>
-      <p>Frontend engineer with <b>over 7 years</b> of experience in scalable web applications.</p>
       <p>
-        <b>Frontend:</b> JavaScript (ES6+), TypeScript, Vue.js (Vue 2 & Vue 3, Composition API), Nuxt.js, React, Next.js,
-        Tailwind, Jest, Vitest<br />
-        <b>Expertise in:</b> сode reviews, frontend application architecture, adaptive and semantic layout<br />
-        <b>Other:</b> Node.js, Nest.js, Bun, Hono, REST API, GraphQL, SSR, Git, CI/CD, Docker <br />
-        <b>Languages: </b> English (Intermediate), Russian (Native), Italian (Beginner)
+        Software engineer with <b>over 7 years</b> of experience in scalable web applications. Currently building B2B e-commerce
+        features for the open-source VirtoCommerce platform.
       </p>
+      <Skills />
     </div>
     <div class="font-serif space-y-4">
       <h4 class="font-sans font-semibold">Projects</h4>
